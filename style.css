@@ -1,0 +1,62 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    width: 900px;
+    margin: auto;
+    padding: 0 1rem;
+    font-size: 1.2em;
+}
+
+header{
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.title{
+    color: tomato;
+    margin-top: .5rem;
+}
+
+h1 span{
+    color: teal;
+}
+
+input{
+    width: 280px;
+    padding: .4rem;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.result-item{
+    padding: .5rem 0;
+}
+
+.result-link{
+    display: block;
+}
+
+.result-title{
+    margin:0;
+}
+
+.footer-info a{
+    text-align: center;
+    padding: .2rem;
+    text-decoration: none;
+    display: block;
+}
+ 
+
+@media only screen and (max-width: 600px) {
+    html {
+      font-size: 2.5em;
+    }
+    input{
+        width: 90%;
+        font-size: 1rem;
+    }
+  }
