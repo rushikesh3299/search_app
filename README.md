@@ -1,2 +1,2 @@
-# search_app
+# Srch App
  Search Engine Using Wikipedia's API
