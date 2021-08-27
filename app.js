@@ -2,18 +2,18 @@ const form = document.querySelector('.js-search-form');
 form.addEventListener('submit', handleSubmit);
 
 async function handleSubmit(event) {
-    //event.preventDefault(); // prevent page from reloading when form is submitted, reloading is default form behaviour
+    event.preventDefault(); // prevent page from reloading when form is submitted, reloading is default form behaviour
     const searchQuery = document.querySelector('.js-search-input').value.trim();  //trim whitespaces from start & end
-    
+    document.querySelector('.js-search-results').innerHTML="";
     //https://www.mediawiki.org/wiki/API:Search#JavaScript  reference for wikipedia API
 
     try {
         const results = await searchWikipedia(searchQuery);
-        console.log(results);
+        //console.log(results);
         displayResults(results);
     } 
     catch (err) {
-        console.log(err);
+        //console.log(err);
         alert('Failed to search wikipedia');
     }   
 }
